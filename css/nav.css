@@ -1,0 +1,101 @@
+.main-nav {
+  background: #FF7B79;
+  z-index: 2000;
+}
+
+.main-nav:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+
+.main-nav ul {
+  float: right;
+  list-style: none;
+  margin-right: 40px;
+  position: relative;
+}
+
+
+.main-nav ul li{
+  float: left;
+  display: inline-block;
+  background: #FF7B79;
+  margin: 0 5px;
+}
+
+.icon-down-open {
+  margin-left: 10px;
+}
+
+.main-nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 8px 15px;
+}
+
+.main-nav ul li a:hover {
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #140B06
+}
+
+.main-nav ul ul li a:hover {
+  color: #FF7B79;
+}
+
+.main-nav ul ul {
+  position: absolute;
+  top: 90px;
+  visibility: hidden;
+  transition: top .3s;
+}
+
+.main-nav ul li:hover ul {
+  top: 60px;
+  visibility: visible;
+  box-shadow: none;
+}
+
+.main-nav ul ul li {
+  background: #140B06;
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.main-nav ul ul li a {
+  color: #ffffff;
+  font-weight: 100;
+}
+
+/*----------------------------------------------------------------
+
+header {
+ background: #FF7B79
+}
+
+/*Estilo del Menú*/
+
+
+/*Estilo del Banner */
+.banner {
+  /* height: 150px; */
+  width: 100%;
+  background: #FF7B79;
+  display: inline-table;
+}
+
+.banner__img {
+  padding: 0 20px 20px 20px;
+  float: left;
+}
+
+.banner__content {
+  float: left;
+  padding: 10px;
+  font-family: 'Pacifico', cursive;
+}

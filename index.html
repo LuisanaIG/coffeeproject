@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mundo Café</title>
+
+  <link rel="icon" href="images/icon.ico">
+  <!--Mis estilos css-->
+  <link rel="stylesheet" href="css/map.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <!-- Librería de Iconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <!-- Libreria de Leaflet-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+  <!-- Load Esri Leaflet from CDN -->
+  <script src="https://unpkg.com/esri-leaflet@2.5.0/dist/esri-leaflet.js"
+  integrity="sha512-ucw7Grpc+iEQZa711gcjgMBnmd9qju1CICsRaryvX7HJklK0pGl/prxKvtHwpgm5ZHdvAil7YPxI1oWPOWK3UQ=="
+  crossorigin=""></script>
+
+  <!-- Pluging easyButtom para Home -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+  <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+
+  <!-- Plugin Atribución -->
+  <link rel="stylesheet" href="css/attribution.css" />
+  <script type="text/javascript" src="js/attribution.js"></script>
+
+  <!-- Geojson -->
+  <script src= "js/coffeepoints.js"></script>
+  <script src= "js/origenpoints.js"></script>
+  <script src= "js/roasterpoints.js"></script>
+
+</head>
+<body>
+  <nav>
+    <div class="logo">LuisanaGIS</div>
+    <label for="btn-menu" class="icon"><span class="fa fa-bars"></span></label>
+    <input type="checkbox" id="btn-menu">
+      <ul>
+        <li><a href="">Geojson</a></li>
+        <li><a href="">Iconos</a></li>
+        <li>
+            <label for="btn-submenu" class ="show">Leaflet +</label>
+            <a href="">Lealflet</a>
+            <input type="checkbox" id="btn-submenu">
+            <ul>
+              <li><a href="">Esri-Leaflet</a></li>
+              <li><a href="">Plugin-Leaflet</a></li>
+            </ul>
+        </li>
+      </ul>
+  </nav>
+<header>
+  <div class = "banner">
+    <img src="images/agricultor.png" alt="" class="banner__img">
+    <h1 class="banner__content">Café de Especialidad, Café Sensible</h1>
+  </div>
+</header>
+
+  <!-- Leyenda externa -->
+  <section class = "map-container">
+  <div class="leyenda-container">
+    <div class="leyenda__item">
+      <img src="images/barista.png" alt="" class = "leyenda__img">
+      <h2 class = "leyenda__title">Café</h2>
+    </div>
+    <div class="leyenda__item">
+      <img src="images/plant.png" alt="" class = "leyenda__img">
+      <h2 class = "leyenda__title">Origen</h2>
+    </div>
+    <div class="leyenda__item">
+      <img src="images/sack.png" alt="" class = "leyenda__img">
+      <h2 class = "leyenda__title">Tostado</h2>
+    </div>
+  </div>
+
+<!-- Visualización del mapa -->
+  <div id="mapid">
+      <script type="text/javascript" src = "js/map.js"></script>
+  </div>
+</section>
+<!-- Pie de página -->
+
+  <footer>
+    <div class="miInfo--contenedor">
+      <p class = "info">Mapa elaborado por <b>Luisana Indriago Gauna</b> &copy; 2020</p>
+      <div class="sociales">
+        <a class = "fab fa-instagram" href="https://www.instagram.com/luisana_gis/" target="_blank"></a>
+        <a class = "fab fa-linkedin-in" href="https://www.linkedin.com/in/luisana-indriago-gauna-682719121/" target="_blank"></a>
+        <a class = "fab fa-github" href="https://github.com/LuisanaIG" target="_blank"></a>
+      </div>
+    </div>
+  </footer>
+  <script>
+        $('.icon').click(function(){
+          $('span').toggleClass("cancel");
+        });
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+a {
+  text-decoration: none;
+}
+#btn-menu {
+ display: none;
+}
+
+header label {
+ font-size: 20px;
+ cursor: pointer;
+ display: none;
+}
+
+.menu {
+ height: 50px;
+ background: #FF7B79;
+}
+
+.menu ul {
+ display: flex;
+ float: right;
+ list-style: none;
+}
+
+.menu ul ul {
+ display: none;
+}
+
+.menu ul li a {
+ display: block;
+ padding: 15px 20px;
+ color: #000000;
+ text-align: center;
+}
+
+.menu ul li a:hover {
+ color: #ffffff;
+ background-color: #140B06;
+}
+
+.icon-down-open {
+ padding: 10px;
+}
+
+.menu__submenu {
+ margin-right: 20px;
+}
+
+.menu__submenu ul li a {
+ display: block;
+ background: rgba(20, 11, 6, 0.8);
+ color: #ffffff;
+ padding: 17px;
+}
+
+.menu ul li:hover ul {
+ display: block;
+ position: absolute;
+}
+
+.menu ul ul li a:hover {
+ color: #FF7B79;
+}

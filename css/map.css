@@ -1,0 +1,70 @@
+#mapid {
+  height: 90vh;
+  width: 85%;
+}
+
+.popupcoffee {
+  background-color: #F1414F;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.infocafe {
+  padding: 10px 15px 10px 15px;
+  border-radius: 0px 0px 10px 35px;
+  background: #F2F2F2;
+  border-style: solid;
+  border-color: #F1414F;
+  line-height: 2;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.popuporigen {
+  border-radius: 10px 10px 0px 0px;
+  background-color: #789355;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.infoorigen {
+  padding: 10px 15px 10px 15px;
+  border-radius: 0px 0px 10px 35px;
+  background: #F2F2F2;
+  border-style: solid;
+  border-color: #789355;
+  line-height: 2;
+  font-size: 12px;
+  text-align: justify;
+}
+
+
+.popuproaster {
+  border-radius: 10px 10px 0px 0px;
+  background-color: #845C47;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.inforoaster {
+  padding: 10px 15px 10px 15px;
+  border-radius: 0px 0px 10px 35px;
+  background: #F2F2F2;
+  border-style: solid;
+  border-color: #845C47;
+  line-height: 2;
+  font-size: 12px;
+  text-align: justify;
+}
+
+
+b  {
+    font-size: 14px;
+}
